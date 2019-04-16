@@ -32,7 +32,7 @@ for turn in range(4):
             move_row = int(input("Move Row: "))
             move_col = int(input("Move Column: "))
         
-    if move_row not in range(5) or move_col not in range(5):
+    elif move_row not in range(5) or move_col not in range(5):
         print ("Oops, that's not even in the range...")
     elif garden[move_row][move_col] == "⚘":
         userChoice = int(input( "There is already a flower here! Would you like to remove it? (1 = Yes /2 =  No)"))
